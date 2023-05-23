@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+
+{% block content %}
+
+    {% from "_macro.html" import render_field %}
+    
+    <form>
+        {{ render_field(form.username) }}
+    </form>
+
+{% endblock%}
